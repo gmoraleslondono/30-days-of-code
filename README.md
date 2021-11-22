@@ -1,6 +1,6 @@
 # 30-days-of-code
 
-During the next 30 days I am going to practice hight level JavaScript function and work on my hability to solve problems. The goal is to develop a solution for small problems form the [Codewars](https://www.codewars.com/) platform.   
+During the next 30 days, the goal is to practice hight level JavaScript function and work on my hability to solve problems. I am going to develop a solution for [Codewars](https://www.codewars.com/) problems, called "katas".   
 
 - [ ] [Bug in Apple](https://www.codewars.com/kata/56fe97b3cc08ca00e4000dc9)
 - [x] [Father and Son](https://www.codewars.com/kata/56fe9a0c11086cd842000008)
