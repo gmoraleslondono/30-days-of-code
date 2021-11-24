@@ -6,7 +6,7 @@ During the next 30 days, the goal is to practice hight level JavaScript function
 - [x] [Father and Son](https://www.codewars.com/kata/56fe9a0c11086cd842000008)
 - [x] [Jumping Dutch act](https://www.codewars.com/kata/570bcd9715944a2c8e000009)
 - [ ] [Planting Trees]()
-- [ ] [Give me the equation]()
+- [x] [Give me the equation]()
 - [ ] [Find the murderer]()
 - [ ] [Reading a Book]()
 - [ ] [Eat watermelon]()
@@ -112,3 +112,53 @@ function sc(floor){
   return voice
 }
 ```
+
+## Give me the equation
+
+### Task:
+Give you three numbers:a b c,please return an equation(Operators include +,-,*,/), return type is string.
+
+For example:
+
+sc(1,2,3) should return "1+2=3" or "2+1=3" or "3-2=1" or "3-1=2"
+
+sc(2,2,4) should return "2+2=4" or "2*2=4" or "4/2=2" or "4-2=2"
+
+sc(6,2,3) should return "2*3=6" or "3*2=6" or "6/2=3" or "6/3=2"
+
+Return one of the possible answer, you can pass the test.
+
+If there is no equation between a,b,c, return ""
+
+
+### Solution:
+
+```JavaScript
+function sc(a,b,c){
+  const operations = ['+', '-', '*', '/'];
+  [a, b, c] = [a, b, c].sort((a,b) => a-b)
+  
+  
+  if(a + b === c) {
+    return `${a}+${b}=${c}`
+  }
+  
+  else if(a - b === c) {
+    return `${a}-${b}=${c}`
+  }
+  
+  else if(a * b === c) {
+    return `${a}*${b}=${c}`
+  }
+  
+  else if(a / b === c) {
+    return `${a}/${b}=${c}`
+  }
+  
+  else {
+    return ""
+  }
+}
+```
+___
+Made with love By Gloria Morales.
